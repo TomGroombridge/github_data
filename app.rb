@@ -13,5 +13,13 @@ end
 
 post "/" do
 	@user = Octokit.user params[:username]
+	repositories = Octokit.repositories(@user[:login])
+	@repos = repo(repositories)
 	erb :info 
+end
+
+def repo(repositories)
+	repositories.map do |repo| 
+		repo.attrs[:name].split(',')
+	end
 end
