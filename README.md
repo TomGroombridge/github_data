@@ -1,1 +1,15 @@
-this app is gatrhering data from the github api about my repos and how much code i have written and in what languages.
+## Github Data
+ 
+### Task set by <a href="https://github.com/ecomba?source=c">@ecomba</a>, at Makers Academy
+
+#### 3rd February 2014
+
+Pulling data from Github using Octokit
+
+What I used:
+
+* Ruby 2.0.0
+
+* Octokit
+
+* Image Majik
